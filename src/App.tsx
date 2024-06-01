@@ -3,6 +3,8 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DashBoardLayout from './components/DashBoardLayout';
+import DashBoard from './pages/DashBoard';
 
 
 function App() {
@@ -12,7 +14,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<h2>new project</h2>} />
+          <Route path="/" element={<DashBoardLayout/>} />
+          {/* <Route path="/" element={<DashBoard />} /> */}
         </Routes>
       </Router>
       
